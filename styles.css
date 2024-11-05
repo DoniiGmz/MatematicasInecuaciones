@@ -145,6 +145,57 @@ ul {
     display: none;
 }
 
+.exercises {
+    margin: 20px 0;
+    display: none; /* La guía está oculta inicialmente */
+}
+.exercise {
+    margin: 15px 0;
+    font-size: 18px;
+    color: #444;
+}
+footer {
+    text-align: center;
+    font-size: 12px;
+    color: #777;
+    margin-top: 20px;
+}
+#noMePresiones {
+    display: block;
+    margin: 30px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #ff6666;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#noMePresiones:hover {
+    background-color: #ff3333;
+}.exercises {
+    margin: 20px 0;
+    display: none; /* La guía está oculta inicialmente */
+}
+.exercise {
+    margin: 15px 0;
+    font-size: 18px;
+    color: #444;
+}
 
+#noMePresiones {
+    display: block;
+    margin: 30px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #ff6666;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#noMePresiones:hover {
+    background-color: #ff3333;
+}
 
 
