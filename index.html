@@ -121,15 +121,44 @@
     
                 <button id="nextStepBtn">Próximo paso</button>
         
-                    <p>Pronto vendran mas ejercicios. ¡Mantenganse practicando y disfruten del aprendizaje!</p>
-                    <br><br><br><br><br>
-                    <button id="noMePresiones">No me pulses</button>
+                    
     
                 </section>
             </main>
+
+            <br><br><br><br>
+            <button id="noMePresiones">🔴 ¡Presióname!</button>
+            <div class="container">
+                
+
+                
+
+                <div id="exercises" class="exercises">
+                    
+                    
+                    <h1>📝 Guía de Ejercicios- 20 Puntos</h1>
+                    <h2>✏️ Inecuaciones para Evaluar</h2>
+                    <p class="exercise">1. Resuelve la inecuación: <strong>3x + 5 &lt; 14</strong></p>
+                    <p class="exercise">2. Resuelve la inecuación: <strong>2x - 7 ≥ 5</strong></p>
+                    <p class="exercise">3. Resuelve la inecuación: <strong>5x - 4 ≤ 21</strong></p>
+                    <p class="exercise">4. Resuelve la inecuación: <strong>x + 6 &gt; 2</strong></p>
+                    <p class="exercise">5. Resuelve la inecuación: <strong>4x - 3 ≤ 9</strong></p>
+                    <p class="exercise">6. Resuelve la inecuación: <strong>6x + 1 ≥ 13</strong></p>
+                    <p class="exercise">7. Resuelve la inecuación: <strong>7x - 8 &lt; 20</strong></p>
+                    <p class="exercise">8. Resuelve la inecuación: <strong>2x + 9 ≤ 15</strong></p>
+                    <footer>
+                        <p>Fecha de entrega: Viernes 8 de Noviembre</p>
+                        <p>Recuerda hacer una portada creativa con la fecha, tu nombre, nombre de la materia y el título de la guía: <b>Guía de Inecuaciones</b> 🎨</p>
+                    </footer>
+                </div>
+
+                
+            </div>
         </div>
 
     </div>
+
+    
 
     <script src="scripts.js"></script>
     <script>
@@ -166,28 +195,17 @@
             }
         });
     </script>
+
     <script>
-        const button = document.getElementById('noMePresiones');
-        const content = document.getElementById('content');
-        const hiddenContent = document.querySelector('.hidden-content');
+        document.getElementById('noMePresiones').addEventListener('click', function() {
+            // Mostramos la guía de ejercicios
+            var exercises = document.getElementById('exercises');
+            exercises.style.display = 'block';
 
-        button.addEventListener('click', function() {
-            // Ocultar el contenido original
-            content.classList.add('hidden');
-
-            // Crear una nueva capa que caerá
-            const fallingLayer = document.createElement('div');
-            fallingLayer.classList.add('falling');
-            fallingLayer.style.top = '0';
-            fallingLayer.innerHTML = content.innerHTML; // Copiar el contenido original
-            document.body.appendChild(fallingLayer);
-
-            // Mostrar el contenido oculto después de que caiga
-            fallingLayer.addEventListener('animationend', () => {
-                fallingLayer.remove(); // Eliminar la capa caída
-                hiddenContent.style.display = 'block'; // Mostrar contenido oculto
-                hiddenContent.style.opacity = '1'; // Mostrar texto amontonado
-            });
+            // Cambiamos el texto del botón después de presionarlo
+            this.textContent = '✅ ¡Ahora debes realizar esta Guía de Ejercicios! 🐼📘';
+            this.style.backgroundColor = '#4CAF50'; // Cambiamos el color a verde
+            this.disabled = true; // Deshabilitamos el botón para evitar múltiples clics
         });
     </script>
 </body>
