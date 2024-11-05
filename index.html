@@ -101,6 +101,12 @@ footer {
 #noMePresiones:hover {
     background-color: #ff3333;
 }
+.center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Esto es opcional, para centrarla también verticalmente */
+        }
     </style>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -179,7 +185,7 @@ footer {
             </main>
 
             <br><br><br><br>
-            <button id="noMePresiones">🔴 ¡Presióname!</button>
+            <button id="noMePresiones">🔴 ¡Presiona para ver las actividades pendientes!</button>
             <div class="container">
                 
 
@@ -188,7 +194,7 @@ footer {
                 <div id="exercises" class="exercises">
                     
                     
-                    <h1>📝 Guía de Ejercicios- 20 Puntos</h1>
+                    <h1>📝 1. Guía de Ejercicios- Valor: 20 Puntos</h1>
                     <h2>✏️ Inecuaciones para Evaluar</h2>
                     <p class="exercise">1. Resuelve la inecuación: <strong>3x + 5 &lt; 14</strong></p>
                     <p class="exercise">2. Resuelve la inecuación: <strong>2x - 7 ≥ 5</strong></p>
@@ -199,9 +205,33 @@ footer {
                     <p class="exercise">7. Resuelve la inecuación: <strong>7x - 8 &lt; 20</strong></p>
                     <p class="exercise">8. Resuelve la inecuación: <strong>2x + 9 ≤ 15</strong></p>
                     <footer>
-                        <p>Fecha de entrega: Este Viernes (8 de Noviembre)</p>
+                        <p>Fecha de entrega: <b>Este Viernes (8 de Noviembre)</b></p>
                         <p>Recuerda hacer una portada creativa con la fecha, tu nombre, nombre de la materia y el título de la guía: <b>Guía de Inecuaciones</b> 🎨</p>
                     </footer>
+                    <h1>📝 2. Investigación en el Cuaderno- Valor: 20 Puntos</h1>
+                    <h2>✏️ Puntos a investigar</h2>
+                    <p class="exercise">1. <b>Definición de la propiedad conmutativa:</b> Investiga y explica en qué consiste la propiedad conmutativa en la suma y multiplicación de números. <strong>3x + 5 &lt; 14</strong></p>
+                    <p class="exercise">2. <b>Aplicaciones de la propiedad conmutativa:</b>Explica cómo y cuándo se utiliza la propiedad conmutativa en la resolución de problemas.</p>                    
+                    <p class="exercise">3. <b>Definición de la propiedad asociativa:</b>xplica cómo y cuándo se utiliza la propiedad conmutativa en la resolución de problemas.</p>
+                    <p class="exercise"><b>4. Ejercicios prácticos de conmutativa y asociativa:</b>Propón tres ejercicios para comprobar estas propiedades. Ejemplo:</p>
+                    <p class="exercise">Verifica si <b>4+(6+2)</b> es igual que <b>(4+6)+2</b></p>                    
+                    <p class="exercise"></p>
+                    <footer>
+                        <p>Fecha de entrega: <b>Próximo Viernes (15 de Noviembre)</b></p>
+                    </footer>
+                    <h1>📝 3. Taller a libro Cerrado - Valor: 20 Puntos</h1>
+                    <h2>✏️ El taller que teníamos pendiente en parejas</h2>
+                                   
+                    <p class="exercise"></p>
+                    <footer>
+                        <p>Fecha: <b>Lunes (11 de Noviembre)</b></p>
+                    </footer>
+
+
+                    <div class="center">
+                        <img src="image1.png" alt="Children learning in a classroom, cartoon style" width="500">
+                    </div>
+
                 </div>
 
                 
@@ -255,7 +285,7 @@ footer {
             exercises.style.display = 'block';
 
             // Cambiamos el texto del botón después de presionarlo
-            this.textContent = '✅ ¡Ahora debes realizar esta Guía de Ejercicios! 🐼📘';
+            this.textContent = '✅ ¡Actividades a Realizar! 🐼📘';
             this.style.backgroundColor = '#4CAF50'; // Cambiamos el color a verde
             this.disabled = true; // Deshabilitamos el botón para evitar múltiples clics
         });
